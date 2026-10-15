@@ -472,4 +472,49 @@ a:focus-visible, button:focus-visible, summary:focus-visible, textarea:focus-vis
 .photo-placeholder { width:100%; aspect-ratio:4/5; background:#fff; border:1px solid #ece9e2; }
 @media(max-width:380px) { .book-stage { width:210px; height:290px; } .memory-book.active { transform:translateX(35px); } }
 @media(prefers-reduced-motion:reduce) { .memory-book,.book-cover { transition:none; } }
+/* Dirección pastel: tarjetas suaves y etiquetas inspiradas en la referencia. */
+:root { --ink:#303332; --muted:#59625d; --paper:#f8f7f1; --olive:#48594e; --mint:#d4e4da; --lavender:#ded9f5; --peach:#f6d3c9; --butter:#f6e8b1; --font-limo:Georgia,serif; }
+body,.invitacion-envelope-root { background:#cadbd1; }
+.envelope-contenedor { background:var(--paper); box-shadow:0 0 65px #334b3c18; }
+.book-intro { position:relative; background:radial-gradient(circle at 12% 20%,#f5e9b9 0,transparent 28%),radial-gradient(circle at 90% 75%,#dcd6f0 0,transparent 34%),#dbe9de; overflow:hidden; }
+.book-intro h1 { color:var(--ink); letter-spacing:-.05em; }
+.eyebrow { display:inline-block; padding:8px 13px; border:1px solid #34463c26; border-radius:40px; font:10px/1.3 Arial,sans-serif; letter-spacing:.14em; background:#ffffff55; }
+.book-cover { color:#343735; border-radius:4px 23px 23px 4px; background:linear-gradient(90deg,#a39ab9,#c3bbd9 6%,#dad4ee 12%,#ded9f1); box-shadow:inset 0 0 0 1px #53496722,7px 13px 25px #46415325; }
+.book-cover:after { border-color:#6d638d55; border-radius:2px 13px 13px 2px; }
+.book-edition { background:#f8f3dc; border-radius:20px; padding:6px 11px; font-size:8px; }
+.book-cover strong { font:500 39px/1.04 Georgia,serif; letter-spacing:-.05em; }
+.book-flower { display:grid; place-items:center; width:67px; height:67px; background:#f3d1c6; border-radius:50%; color:#4c5350; font-size:48px; rotate:12deg; }
+.book-caption { font-size:8px; }
+.album-nav { background:#f8f7f1f5; border:0; padding:14px 20px; }
+.album-nav a { background:#303733; color:#fffdf5; padding:10px 15px; border-radius:25px; }
+.album-nav span { align-self:center; border:1px solid #53634e22; border-radius:25px; padding:10px 12px; font-size:9px; }
+.contenido-expandido { padding-bottom:14px; }
+.page { position:relative; margin:12px 14px 0; border-radius:32px; padding:64px 38px; overflow:hidden; }
+.page h2 { color:#303733; letter-spacing:-.055em; }
+.page h2 em { color:#4d5d52; }
+.album-intro { background:var(--mint); }
+.moments { background:var(--lavender); }
+.little-things { background:var(--butter); }
+.favorite { background:var(--peach); }
+.last-page { background:#e0e9e3; }
+.next-page { display:inline-flex; align-items:center; justify-content:center; gap:16px; padding:13px 18px; border:0; border-radius:28px; background:#faf9f0; color:#34453a; }
+.next-page span { display:grid; place-items:center; margin:0; width:30px; height:30px; border-radius:50%; background:#dce6d8; font-size:19px; }
+.memory-photo { border-radius:24px; padding:12px 12px 18px; box-shadow:0 8px 0 #49435512,0 15px 25px #36313f0d; }
+.memory-photo:before { width:65px; border-radius:6px; background:#f7e9b9d9; }
+.photo-placeholder { border-radius:15px; background:#fff; border-color:#edece8; }
+.memory-photo figcaption { color:#454b43; }
+.memory-detail { background:#f7f5ff99; padding:0 20px; border:0; border-radius:22px; }
+.memory-detail summary { list-style:none; padding:22px 0; }
+.memory-detail summary::-webkit-details-marker { display:none; }
+.memory-detail summary span { display:grid; place-items:center; border-radius:50%; background:#fff; width:25px; height:25px; margin-top:-4px; }
+.keepsake { margin-top:14px; border:0; padding:26px 22px 26px 65px; border-radius:23px; background:#fffaf0; }
+.keepsake:nth-of-type(2) { background:#f2d7cd; rotate:1deg; }
+.keepsake:nth-of-type(3) { background:#d7e3d9; rotate:-1deg; }
+.keepsake-number { top:25px; left:18px; width:30px; height:30px; display:grid; place-items:center; background:#ffffffa6; border-radius:50%; color:#454c40; }
+.keepsake h3 { font-size:22px; }
+.note-form { border:0; border-radius:25px; box-shadow:none; background:#fffdf4; }
+.note-form button { border-radius:30px; background:#35473c; padding:18px 22px; }
+.note-form textarea { background-color:#fffdf4; }
+.saved-memory { border-radius:22px; background:#f4e9bb; }
+@media(max-width:480px) { .page { padding:50px 22px; margin:10px 10px 0; border-radius:28px; } .page h2 { font-size:38px; } .album-nav { padding:12px 14px; gap:8px; letter-spacing:0; } .album-nav a,.album-nav span { padding:10px 12px; } .memory-photo { max-width:255px; } }
 
