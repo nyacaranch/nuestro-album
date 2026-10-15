@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro álbum | Gabriel &amp; Andrea</title>
+  <meta name="description" content="Un álbum de recuerdos para descubrir, página a página, los momentos de Gabriel y Andrea.">
+  
+
+  <!-- Tipografías: Google Fonts (Reenie Beanie) + Adobe Typekit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/dvx3bst.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="invitacion-envelope-root">
+    <main class="envelope-contenedor">
+
+<section id="sobreSeccion" class="book-intro" role="button" tabindex="0" aria-label="Abrir el libro de recuerdos" aria-expanded="false" aria-controls="contenidoExpandido">
+<p class="eyebrow">UN PEQUEÑO ARCHIVO DE NOSOTROS</p>
+<h1>Nuestro álbum</h1>
+<div id="animadorLoop" class="book-stage">
+<div id="escenario" class="memory-book">
+<div class="book-pages"><span class="handwritten">Aquí empieza<br>nuestra historia.</span><span class="page-number">01</span></div>
+<div class="book-cover"><span class="book-edition">RECUERDOS · VOL. 01</span><strong>Lo que<br>guardamos.</strong><span class="book-flower">✳</span><span class="book-caption">Nuestro álbum de momentos</span></div>
+</div></div>
+<div id="instruccionAbrir" class="instruccion-abrir"><p>Toca el libro para abrirlo<small>Y COMIENZA EL RECORRIDO</small></p></div>
+</section><div id="contenidoExpandido" class="contenido-expandido" hidden>
+        <nav id="albumNav" class="album-nav" aria-label="Recorrido del álbum" hidden><a href="#inicio">Nuestro álbum</a><span id="chapterLabel">01 · El comienzo</span></nav>
+        <section id="inicio" class="album-intro page scroll-reveal" data-chapter="01 · El comienzo" tabindex="-1">
+          <span class="eyebrow">01 / EL COMIENZO</span>
+          <p class="handwritten">Hay momentos que se quedan.</p>
+          <h2>Lo bonito de<br><em>coincidir.</em></h2>
+          <p>Este es un pequeño lugar para volver a nosotros. A las miradas, a las risas y a todo eso que una foto no alcanza a contar.</p>
+          <div class="intro-rule"><span>G & A</span></div>
+          <a class="next-page" href="#instantes">Sigue el hilo de nuestros recuerdos <span>↓</span></a>
+        </section>
+
+        <section id="instantes" class="page moments" data-chapter="02 · Los instantes">
+          <header class="scroll-reveal"><span class="eyebrow">02 / LOS INSTANTES</span><h2>Si pudiera guardar<br><em>un momento…</em></h2><p>Sería uno de estos. Sin prisa, sin poses perfectas.<br>Solo nosotros.</p></header>
+          <figure class="memory-photo tilt-left scroll-reveal-scale"><div class="photo-placeholder" role="img" aria-label="Espacio vacío para tu fotografía"></div><figcaption>01 — Aquí, contigo.</figcaption></figure>
+          <p class="photo-note handwritten scroll-reveal">mi lugar favorito<br>siempre termina siendo a tu lado ↗</p>
+          <figure class="memory-photo tilt-right scroll-reveal-scale"><div class="photo-placeholder" role="img" aria-label="Espacio vacío para tu fotografía"></div><figcaption>02 — De esos días que repetiría.</figcaption></figure>
+          <details class="memory-detail scroll-reveal"><summary>Una nota detrás de la foto <span>+</span></summary><p>A veces lo que más queremos recordar es lo más sencillo: estar cerca, reír por cualquier cosa y olvidarnos un ratito del reloj.</p></details>
+        </section>
+
+        <section id="pequeno" class="page little-things" data-chapter="03 · Lo cotidiano">
+          <span class="eyebrow scroll-reveal">03 / LO COTIDIANO</span>
+          <h2 class="scroll-reveal">Las pequeñas cosas.<br><em>Las nuestras.</em></h2>
+          <div class="keepsake scroll-reveal"><span class="keepsake-number">01</span><h3>Una risa compartida</h3><p>De esas que empiezan por nada y terminan siendo todo un recuerdo.</p></div>
+          <div class="keepsake scroll-reveal"><span class="keepsake-number">02</span><h3>El camino de vuelta</h3><p>Cuando el destino importa un poquito menos que la compañía.</p></div>
+          <div class="keepsake scroll-reveal"><span class="keepsake-number">03</span><h3>Un abrazo a tiempo</h3><p>Y esa manera tan tuya de hacer que cualquier lugar se sienta como casa.</p></div>
+          <p class="handwritten scroll-reveal">No todo quedó en fotos.<br>Pero todo se quedó aquí. ♡</p>
+        </section>
+
+        <section id="favorita" class="page favorite" data-chapter="04 · Una página favorita">
+          <header class="scroll-reveal"><span class="eyebrow">04 / UNA PÁGINA FAVORITA</span><h2>Volvería a elegir<br><em>este instante.</em></h2></header>
+          <figure class="memory-photo scroll-reveal-scale"><div class="photo-placeholder" role="img" aria-label="Espacio vacío para tu fotografía"></div><figcaption>03 — Que nunca se nos olvide.</figcaption></figure>
+          <blockquote class="scroll-reveal">“Qué suerte la nuestra,<br>tener tanto a lo que volver.”</blockquote>
+          <p class="scroll-reveal">Guardamos estas imágenes como quien guarda una flor entre las páginas de un libro. Para encontrarlas después y sentirlo todo otra vez.</p>
+        </section>
+
+        <section id="por-escribir" class="page last-page" data-chapter="05 · Por escribir">
+          <header class="scroll-reveal"><span class="eyebrow">05 / POR ESCRIBIR</span><p class="handwritten">Este álbum todavía tiene espacio.</p><h2>Un recuerdo más,<br><em>antes de irte.</em></h2><p>Una frase, un día, algo que no quieras olvidar.</p></header>
+          <form id="memoryForm" class="note-form scroll-reveal">
+            <label for="memoryNote">Quiero acordarme de…</label>
+            <textarea id="memoryNote" rows="5" maxlength="2000" required placeholder="Aquella vez que…" aria-describedby="storageHint saveStatus"></textarea>
+            <button type="submit">Guardar este recuerdo <span>↗</span></button>
+            <p id="storageHint" class="small-print">Se guarda solo en este navegador, en este dispositivo.</p>
+            <p id="saveStatus" role="status" class="small-print"></p>
+          </form>
+          <blockquote id="savedMemory" class="saved-memory" hidden></blockquote>
+          <footer class="album-footer scroll-reveal"><span class="handwritten">Continuará…</span><p>Gabriel & Andrea<br><span>Nuestro pequeño archivo de momentos.</span></p><a class="next-page" href="#inicio">Volver a la primera página ↑</a></footer>
+        </section>
+      </div></main></div><script src="script.js"></script></body></html>
+
+
